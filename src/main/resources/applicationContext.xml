@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.yph"/>
+
+    <bean id="helloWorld" class="com.yph.HelloWorld">
+        <property name="message" value="/resources/application.properties"/>
+    </bean>
+
+<!--    <bean id="log4jConfig" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">-->
+<!--        <property name="targetClass" value="org.apache.logging.log4j.core.config.Configurator" />-->
+<!--        <property name="targetMethod" value="initialize" />-->
+<!--        <property name="arguments">-->
+<!--            <list>-->
+<!--                <value>default</value>-->
+<!--                <value>log4j2.xml</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+</beans>
