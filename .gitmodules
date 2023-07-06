@@ -1,0 +1,6 @@
+[submodule "hexo-theme-cactus"]
+	path = hexo-theme-cactus
+	url = git@github.com:probberechts/hexo-theme-cactus.git
+[submodule "submoudle"]
+	path = submoudle
+	url = git@github.com:wixhz/submoudle.git
